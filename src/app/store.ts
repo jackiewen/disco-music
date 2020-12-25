@@ -1,10 +1,12 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import { configureStore, ThunkAction, Action, MiddlewareArray  } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
+import logger from 'redux-logger'
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
   },
+  middleware: new MiddlewareArray().concat(logger)
 });
 
 export type RootState = ReturnType<typeof store.getState>;
