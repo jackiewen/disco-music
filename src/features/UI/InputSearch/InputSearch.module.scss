@@ -1,0 +1,21 @@
+.InputSearch {
+    position: relative;
+    
+    i {
+        position: absolute;
+        z-index: 100;
+        color: #B6B6B6;
+        top: 12px;
+        left: 10px;
+    }
+    input {
+        background-color: #f6f6f6;
+        min-width: 575px;
+        font-size: 1rem;
+        padding-left: 40px;
+        font-family: 'Open Sans', sans-serif;
+        padding: .375rem .75rem;
+        padding-left: 40px;
+        color: #495057;
+    }
+}

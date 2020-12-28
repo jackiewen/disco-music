@@ -1,5 +1,7 @@
-import { TopBar } from './TopBar/TopBar';
+import TopBar from './TopBar/TopBar';
+import Header from './Header/Header';
 
 export {
-    TopBar
+    TopBar,
+    Header
 }

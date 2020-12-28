@@ -1,0 +1,17 @@
+.Logo {
+    &.large {
+        width: 120px;
+    }
+
+    &.medium {
+        width: 60px;
+    }
+
+    &.small {
+        width: 30px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
