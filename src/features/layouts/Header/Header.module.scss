@@ -1,0 +1,22 @@
+
+@media all and (min-width: 992px) {
+    .Header {
+        .HeaderItem {
+            .HeaderDropdownMenu { display: none !important; }
+        }
+
+        .HeaderItem:hover {
+            .HeaderDropdownMenu { display: block !important; }
+        }
+
+        .HeaderItem {
+            .HeaderDropdownMenu { margin-top:0 !important; }
+        }
+
+        .HeaderItem {
+            a::after {
+                display: none;
+            }
+        }
+    }
+}

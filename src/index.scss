@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+.text-uppercase-first-letter {
+  display: inline-block;
+}
+
+.text-uppercase-first-letter::first-letter {
+  text-transform: capitalize !important;
+}
+
+// @media all and (min-width: 992px) {
+//   .navbar .nav-item .dropdown-menu{ display: none; }
+//   // .navbar .nav-item:hover .nav-link { color: rgb(87, 22, 22);  }
+//   .navbar .nav-item:hover .dropdown-menu { display: block; }
+//   .navbar .nav-item .dropdown-menu { margin-top:0; }
+// }

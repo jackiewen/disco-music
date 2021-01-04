@@ -2,20 +2,19 @@ import React from 'react';
 import * as Layout from './features/layouts';
 import * as UI from './features/UI';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import routers from './config/routers';
 
-type tProps = {
-  t: Function
-}
+function App() {
+  const { t } = useTranslation();
 
-function App({ t }: tProps) {
   return (
     <>
     <Layout.TopBar>
       <UI.Logo size="small" />
       <div className="d-flex align-items-center justify-content-between">
         <div className="mr-5">
-          <UI.InputSearch placeholder={t('common:enter song, video, singer that you need to search', {framework:'React'})} />
+          <UI.InputSearch placeholder={t('common:enter song, video, singer that you need to search')} />
         </div>
         <div>
           <UI.Button.History />
@@ -24,8 +23,9 @@ function App({ t }: tProps) {
       <UI.LoginRegister />
     </Layout.TopBar>
     <Layout.Header />
+    {routers}
     </>
   );
 }
 
-export default withTranslation()(App);
+export default App;
