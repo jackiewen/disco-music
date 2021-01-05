@@ -1,5 +1,1 @@
-import IRoute from './IRoute';
-
-export {
-    IRoute
-}
+export * from './IRoute';

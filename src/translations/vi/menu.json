@@ -1,3 +1,7 @@
 {
-    "rating": "xếp hạng"
+    "rating": "xếp hạng",
+    "daily ranking": "xếp hạng ngày",
+    "weekly ranking": "xếp hạng tuần",
+    "monthly ranking": "xếp hạng tháng",
+    "yearly ranking": "xếp hạng năm"
 }
