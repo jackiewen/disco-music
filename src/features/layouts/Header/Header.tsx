@@ -11,19 +11,19 @@ const Header = () => {
 
     return (
         <nav className={["navbar navbar-expand-lg navbar-light bg-light", classes.Header].join(' ')}>
-        <div className="container">
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader" aria-controls="mainHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="mainHeader">
-                <Menu 
-                    items={MenuMockup}
-                    classHeaderItem={classes.HeaderItem}
-                    classHeaderDropdownMenu={classes.HeaderDropdownMenu}
-                />
+            <div className="container">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader" aria-controls="mainHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="mainHeader">
+                    <Menu 
+                        items={MenuMockup}
+                        classHeaderItem={classes.HeaderItem}
+                        classHeaderDropdownMenu={classes.HeaderDropdownMenu}
+                    />
+                </div>
+                <Button.Upload />
             </div>
-            <Button.Upload />
-        </div>
         </nav>
     );
 }
