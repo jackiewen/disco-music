@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
-import { routes } from '../constants/routers';
-
+import { routes }  from '@constants';
 
 function RouteWithSubRoutes(route: any) {
     return (

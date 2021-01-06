@@ -3,12 +3,12 @@ import classes from './History.module.scss';
 
 const History = () => {
 
-    const abc = () => {
-        console.log('abc');
+    const handleClick = () => {
+        console.log('History button');
     }
 
     return (
-        <a className={classes.History} onClick={abc}>
+        <a className={classes.History} onClick={handleClick}>
             <i className="fas fa-history"></i>
         </a>
     );

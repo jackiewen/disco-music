@@ -2,8 +2,13 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
+            "@mockups": ["mockups"],
+            "@config": ["src/config"],
+            "@constants": ["src/constants"],
             "@interfaces": ["src/interfaces"],
-            "@mockups": ["src/mockups"]
+            "@UI": ["src/features/UI"],
+            "@layouts": ["src/features/layouts"],
+            "@pages": ["src/pages"]
         }
     }
 }

@@ -1,3 +1,4 @@
+@import '../../../sass/variables';
 
 @media all and (min-width: 992px) {
     .Header {
@@ -6,7 +7,18 @@
         }
 
         .HeaderItem:hover {
-            .HeaderDropdownMenu { display: block !important; }
+            & > a, a:hover {
+                color: $active-link-color;
+            }
+            .HeaderDropdownMenu {
+                display: block !important;
+                border-radius: 0;
+                
+                a:hover {
+                    color: $active-link-color;
+                    background-color: transparent;
+                }
+            }
         }
 
         .HeaderItem {
