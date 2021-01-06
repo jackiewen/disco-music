@@ -1,0 +1,77 @@
+[
+	{
+		"name": "rating",
+		"route": "rating",
+		"path": {
+			"pathname": "/xep-hang"
+		},
+		"subRoute": [
+			{
+				"name": "daily ranking",
+				"route": "rating.daily-ranking",
+				"path": {
+					"pathname": "/xep-hang/ngay"
+				}
+			},
+			{
+				"name": "weekly ranking",
+				"route": "rating.weekly-ranking",
+				"path": {
+					"pathname": "/xep-hang/tuan"
+				}
+			},
+			{
+				"name": "monthly ranking",
+				"route": "rating.monthly-ranking",
+				"path": {
+					"pathname": "/xep-hang/thang"
+				}
+			},
+			{
+				"name": "yearly ranking",
+				"route": "rating.yearly-ranking",
+				"path": {
+					"pathname": "/xep-hang/nam"
+				}
+			}
+		]
+	},
+
+	{
+		"name": "vietnam",
+		"route": "vietnam",
+		"path": {
+			"pathname": "/vietnam"
+		},
+		"subRoute": [
+			{
+				"name": "pop, rock music",
+				"route": "vietnam.pop-rock",
+				"path": {
+					"pathname": "/vietnam/v-pop-rock"
+				}
+			},
+			{
+				"name": "rap, hiphop music",
+				"route": "vietnam.rap-hiphop",
+				"path": {
+					"pathname": "/vietnam/v-rap-hiphop"
+				}
+			},
+			{
+				"name": "dance, remix music",
+				"route": "vietnam.dance-remix",
+				"path": {
+					"pathname": "/vietnam/v-dance-remix"
+				}
+			},
+			{
+				"name": "traditional music",
+				"route": "vietnam.traditional",
+				"path": {
+					"pathname": "/vietnam/v-traditional"
+				}
+			}
+		]
+	}
+]

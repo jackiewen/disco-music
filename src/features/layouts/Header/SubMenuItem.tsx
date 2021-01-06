@@ -15,7 +15,7 @@ const SubMenuItem = (props: Props) => {
     return (
         <ul className={["dropdown-menu", props.classHeaderDropdownMenu].join(' ')} aria-labelledby="navbarDropdown">
         {props.items && props.items.map((item: IRoute, index: number) => (
-            <li key={"sub_menu" + index}><Link className="dropdown-item" to={item.path}>{t("menu:" + item.name)}</Link></li>
+            <li key={"sub_menu" + index}><Link className="dropdown-item text-capitalize" to={item.path}>{t("menu:" + item.name)}</Link></li>
         ))}
         </ul>
     )

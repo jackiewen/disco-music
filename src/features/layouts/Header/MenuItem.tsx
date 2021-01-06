@@ -16,8 +16,13 @@ const MenuItem = (props: Props) => {
 
     return (
         <li className={["nav-item dropdown", props.classHeaderItem].join(' ')}>
-            <Link className="nav-link dropdown-toggle text-capitalize" to="/xep-hang" role="button" data-hover="dropdown" aria-expanded="false">
-                {t('menu:rating')}
+            <Link 
+                className="nav-link dropdown-toggle text-capitalize" 
+                to={props.item.path} 
+                role="button" 
+                data-hover="dropdown" 
+                aria-expanded="false">
+                {t('menu:' + props.item.name)}
             </Link>
             {props.item &&
                 <SubMenuItem classHeaderDropdownMenu={props.classHeaderDropdownMenu} items={props.item.subRoute}  />
