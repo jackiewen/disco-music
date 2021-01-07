@@ -1,5 +1,4 @@
 .main-slider {
-    
     .slick-slide {
         padding: 10px;
         outline: none;
@@ -7,7 +6,7 @@
 
         .item-cover {
             width: 100% !important;
-            height: 300px;
+            height: 324px;
             background-image: url(https://data.chiasenhac.com/data/cover/134/133126.jpg);
             background-position: center;
             background-size: cover;
@@ -63,5 +62,28 @@
             }
         }
 
+        @media (max-width: 1399px) {
+            .item-cover {
+                height: 279px;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .item-cover {
+                height: 234px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .item-cover {
+                height: 172px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .item-cover {
+                height: 258px;
+            }
+        }
     }
 }

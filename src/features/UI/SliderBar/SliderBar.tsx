@@ -11,6 +11,8 @@ type Props = {
 
 const SliderBar = (props: Props) => {
 
+    let myRef = null;
+
     const settings = {
         dots: true,
         // lazyLoad: true,
@@ -20,6 +22,7 @@ const SliderBar = (props: Props) => {
         slidesToScroll: 4,
         initialSlide: 0,
         className:"main-slider",
+        beforeChange: (current: any, next: any) => {console.log(current, next)},
         responsive: [
           {
             breakpoint: 1024,
@@ -48,6 +51,7 @@ const SliderBar = (props: Props) => {
         ]
       };
 
+    console.log(myRef);
     return (
         <div>
             <div className="container">
