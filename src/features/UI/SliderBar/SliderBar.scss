@@ -1,0 +1,67 @@
+.main-slider {
+    
+    .slick-slide {
+        padding: 10px;
+        outline: none;
+        position: relative;
+
+        .item-cover {
+            width: 100% !important;
+            height: 300px;
+            background-image: url(https://data.chiasenhac.com/data/cover/134/133126.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+            .item-cover-hover {
+                background-color: rgba($color: #000000, $alpha: .2);
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                opacity: 0;
+                transition: all .5s;
+            }
+
+            .item-cover-hover::after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f144";
+                color: #fff;
+                position: absolute;
+                font-size: 5rem;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+        .item-cover:hover {
+            .item-cover-hover {
+                opacity: 1;
+            }
+        }
+
+        .item-info {
+            padding-top: 10px;
+            .title {
+                color: #1B1B1B;
+                font-size: 1.2rem;
+                .other {
+                    color: #878787;
+                    font-size: 1rem;
+                }
+            }
+            .author {
+                color: #878787;
+                font-size: 1.2rem;
+            }
+            .quality {
+                color: red;
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+}

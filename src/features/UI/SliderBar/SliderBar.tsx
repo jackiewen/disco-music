@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import SliderItem from './SliderItem';
+import './SliderBar.scss';
 
 type Props = {
     items: Array<any>
@@ -17,7 +19,7 @@ const SliderBar = (props: Props) => {
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
-        
+        className:"main-slider",
         responsive: [
           {
             breakpoint: 1024,
@@ -50,30 +52,13 @@ const SliderBar = (props: Props) => {
         <div>
             <div className="container">
                 <Slider {...settings}>
-                    <div>
-                        <img src={"https://data.chiasenhac.com/data/cover/134/133126.jpg"} />
-                    </div>
-                    <div>
-                        <img src={"https://data.chiasenhac.com/data/cover/134/133126.jpg"} />
-                    </div>
-                    <div>
-                        <img src={"https://data.chiasenhac.com/data/cover/134/133126.jpg"} />
-                    </div>
-                    <div>
-                        <img src={"https://data.chiasenhac.com/data/cover/134/133126.jpg"} />
-                    </div>
-                    <div>
-                        <img src={"https://data.chiasenhac.com/data/cover/134/133126.jpg"} />
-                    </div>
-                    <div>
-                        <img src={"https://data.chiasenhac.com/data/cover/134/133126.jpg"} />
-                    </div>
-                    <div>
-                        <img src={"https://data.chiasenhac.com/data/cover/134/133126.jpg"} />
-                    </div>
-                    <div>
-                        <img src={"https://data.chiasenhac.com/data/cover/134/133126.jpg"} />
-                    </div>
+                    <SliderItem />
+                    <SliderItem />
+                    <SliderItem />
+                    <SliderItem />
+                    <SliderItem />
+                    <SliderItem />
+                    <SliderItem />
                 </Slider>
             </div>
         </div>
