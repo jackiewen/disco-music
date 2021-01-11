@@ -4,8 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderItem from './SliderItem';
 import './SliderBar.scss';
+import NextArrow from './NextArrow';
+import PrevArrow from './PrevArrow';
 
-type Props = {
+interface Props {
     items: Array<any>
 }
 
@@ -22,7 +24,8 @@ const SliderBar = (props: Props) => {
         slidesToScroll: 4,
         initialSlide: 0,
         className:"main-slider",
-        beforeChange: (current: any, next: any) => {console.log(current, next)},
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive: [
           {
             breakpoint: 1024,

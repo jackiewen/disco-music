@@ -1,8 +1,9 @@
 import React, { Suspense } from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 import { routes }  from '@constants';
+import { IRouter } from '@interfaces';
 
-function RouteWithSubRoutes(route: any) {
+function RouteWithSubRoutes(route: IRouter) {
     return (
         <Route
             path={route.path}

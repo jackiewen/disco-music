@@ -8,7 +8,8 @@
             "@interfaces": ["src/interfaces"],
             "@UI": ["src/features/UI"],
             "@layouts": ["src/features/layouts"],
-            "@pages": ["src/pages"]
+            "@pages": ["src/pages"],
+            "@images": ["src/images"]
         }
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './TopBar.module.scss';
 
-type Props = {
+interface Props {
     children?: React.ReactChild | React.ReactChild[]
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './InputSearch.module.scss';
 
-type Props = {
+interface Props {
     placeholder?: string
 }
 

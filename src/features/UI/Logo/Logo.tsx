@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Logo.module.scss';
-import logo from './logo.png';
+import logo from '@images/logo.png';
 
-type Props = {
+interface Props {
     size: string
 }
 
