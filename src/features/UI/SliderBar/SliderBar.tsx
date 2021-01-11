@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import SliderItem from './SliderItem';
+import { SongItem } from '@UI';
 import './SliderBar.scss';
 import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
@@ -59,13 +59,41 @@ const SliderBar = (props: Props) => {
         <div>
             <div className="container">
                 <Slider {...settings}>
-                    <SliderItem />
-                    <SliderItem />
-                    <SliderItem />
-                    <SliderItem />
-                    <SliderItem />
-                    <SliderItem />
-                    <SliderItem />
+                  <SongItem 
+                      {...props}
+                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
+                      title="Nhạc Hoa"
+                      author="Nguyễn A"
+                      quality="lossless"
+                  />
+                  <SongItem 
+                      {...props}
+                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
+                      title="Nhạc Hoa"
+                      author="Nguyễn A"
+                      quality="lossless"
+                  />
+                  <SongItem 
+                      {...props}
+                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
+                      title="Nhạc Hoa"
+                      author="Nguyễn A"
+                      quality="lossless"
+                  />
+                  <SongItem 
+                      {...props}
+                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
+                      title="Nhạc Hoa"
+                      author="Nguyễn A"
+                      quality="lossless"
+                  />
+                  <SongItem 
+                      {...props}
+                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
+                      title="Nhạc Hoa"
+                      author="Nguyễn A"
+                      quality="lossless"
+                  />
                 </Slider>
             </div>
         </div>

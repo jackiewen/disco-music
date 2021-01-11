@@ -18,7 +18,7 @@ const SongItem = (props: Props) => {
             <div className={classes.SongInfo}>
                 <div className={classes.Title}>
                     {props.other && <span className={classes.Other}>{props.other}</span>}{props.title}
-                    </div>
+                </div>
                 {props.author && <div className={classes.Author}>{props.author}</div>}
                 {props.quality && <div className={classes.Quality}>{props.quality}</div>}
             </div>
