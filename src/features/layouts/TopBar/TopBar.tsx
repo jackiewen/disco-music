@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './TopBar.module.scss';
 
-interface Props {
+interface IProps {
     children?: React.ReactChild | React.ReactChild[]
 }
 
-const TopBar = (props: Props) => {
+const TopBar = (props: IProps) => {
     return (
         <div className={classes.TopBar}>
             <div className="container">

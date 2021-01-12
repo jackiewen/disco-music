@@ -3,12 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { IRoute } from '@interfaces';
 
-interface Props {
+interface IProps {
     items?: Array<IRoute>,
     classHeaderDropdownMenu?: string
 }
 
-const SubMenuItem = (props: Props) => {
+const SubMenuItem = (props: IProps) => {
 
     const { t } = useTranslation();
 

@@ -4,6 +4,7 @@ import LoginRegister from './LoginRegister/LoginRegister';
 import * as Button from './Button';
 import SliderBar from './SliderBar/SliderBar';
 import SongItem from './SongItem/SongItem';
+import Box from './Box/Box';
 
 export {
     Logo,
@@ -11,5 +12,6 @@ export {
     LoginRegister,
     Button,
     SliderBar,
-    SongItem
+    SongItem,
+    Box
 }

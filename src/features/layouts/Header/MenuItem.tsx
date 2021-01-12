@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next';
 import SubMenuItem from './SubMenuItem';
 import { IRoute } from '@interfaces';
 
-interface Props {
+interface IProps {
     item: IRoute,
     classHeaderItem?: string,
     classHeaderDropdownMenu?: string
 }
 
-const MenuItem = (props: Props) => {
+const MenuItem = (props: IProps) => {
     
     const { t } = useTranslation();
 

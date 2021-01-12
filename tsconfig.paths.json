@@ -9,7 +9,7 @@
             "@UI": ["src/features/UI"],
             "@layouts": ["src/features/layouts"],
             "@pages": ["src/pages"],
-            "@images": ["src/images"]
+            "@images": ["src/images"],
         }
     }
 }

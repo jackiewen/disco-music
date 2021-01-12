@@ -2,6 +2,31 @@
     {
         "title": "Nhạc Hoa",
         "author": "Nguyễn A",
-        ""
+        "quality": "lossless",
+        "cover_image": "https://data.chiasenhac.com/data/cover/134/133126.jpg"
+    },
+    {
+        "title": "Nhạc Hoa",
+        "author": "Nguyễn B",
+        "quality": "lossless",
+        "cover_image": "https://data.chiasenhac.com/data/cover/134/133126.jpg"
+    },
+    {
+        "title": "Nhạc Hoa",
+        "author": "Nguyễn C",
+        "quality": "lossless",
+        "cover_image": "https://data.chiasenhac.com/data/cover/134/133126.jpg"
+    },
+    {
+        "title": "Nhạc Hoa",
+        "author": "Nguyễn D",
+        "quality": "lossless",
+        "cover_image": "https://data.chiasenhac.com/data/cover/134/133126.jpg"
+    },
+    {
+        "title": "Nhạc Hoa",
+        "author": "Nguyễn E",
+        "quality": "lossless",
+        "cover_image": "https://data.chiasenhac.com/data/cover/134/133126.jpg"
     }
 ]

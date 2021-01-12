@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './SongItem.module.scss';
 
-interface Props {
+interface IProps {
     coverImgPath: string,
     other?: string,
     title: string,
@@ -9,7 +9,7 @@ interface Props {
     quality?: string
 }
 
-const SongItem = (props: Props) => {
+const SongItem = (props: IProps) => {
     return (
         <div className={classes.SongItem}>
             <div className={classes.SongCover} style={{backgroundImage: "url(" + props.coverImgPath + ")"}}>

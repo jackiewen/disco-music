@@ -6,14 +6,15 @@ import { SongItem } from '@UI';
 import './SliderBar.scss';
 import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
+import { ISong } from '@interfaces';
 
-interface Props {
+const sliderItems = require('@mockups/slider-items.json');
+
+interface IProps {
     items: Array<any>
 }
 
-const SliderBar = (props: Props) => {
-
-    let myRef = null;
+const SliderBar = (props: IProps) => {
 
     const settings = {
         dots: true,
@@ -27,73 +28,49 @@ const SliderBar = (props: Props) => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
         ]
-      };
+    };
 
-    console.log(myRef);
     return (
         <div>
             <div className="container">
                 <Slider {...settings}>
-                  <SongItem 
-                      {...props}
-                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
-                      title="Nhạc Hoa"
-                      author="Nguyễn A"
-                      quality="lossless"
-                  />
-                  <SongItem 
-                      {...props}
-                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
-                      title="Nhạc Hoa"
-                      author="Nguyễn A"
-                      quality="lossless"
-                  />
-                  <SongItem 
-                      {...props}
-                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
-                      title="Nhạc Hoa"
-                      author="Nguyễn A"
-                      quality="lossless"
-                  />
-                  <SongItem 
-                      {...props}
-                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
-                      title="Nhạc Hoa"
-                      author="Nguyễn A"
-                      quality="lossless"
-                  />
-                  <SongItem 
-                      {...props}
-                      coverImgPath={"https://data.chiasenhac.com/data/cover/134/133126.jpg"}
-                      title="Nhạc Hoa"
-                      author="Nguyễn A"
-                      quality="lossless"
-                  />
+                    {sliderItems && sliderItems.map((item: ISong, index: number) => (
+                        <SongItem 
+                            {...props}
+                            key={"slider-item-" + index}
+                            other={`${index + 1}. `}
+                            coverImgPath={item.cover_image}
+                            title={item.title}
+                            author={item.author}
+                            quality={item.quality}
+                        />
+                    ))}
+                    
                 </Slider>
             </div>
         </div>

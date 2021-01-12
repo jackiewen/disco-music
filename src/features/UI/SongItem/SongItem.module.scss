@@ -1,6 +1,7 @@
 @import '../../../sass/variables';
 
 .SongItem {
+    cursor: pointer;
     .SongCover {
         width: 100% !important;
         height: 324px;

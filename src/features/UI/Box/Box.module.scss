@@ -1,0 +1,37 @@
+@import '../../../sass/variables';
+
+.Box {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .Header {
+        // background-color: red;
+        display: flex;
+        flex-direction: row;
+        .Title {
+            flex-grow: 1;
+            align-self: center;
+            color: $active-link-color;
+            font-size: 1.8rem;
+        }
+
+        .ViewAll {
+            flex-grow: 1;
+            text-align: right;
+            align-self: center;
+            text-decoration: none;
+            color: $mute-text-color;
+            font-size: 1rem;
+        }
+
+        .ViewAll:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .Body {
+        // background-color: green;
+        height: 100px;
+    }
+}

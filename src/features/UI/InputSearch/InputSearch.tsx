@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './InputSearch.module.scss';
 
-interface Props {
+interface IProps {
     placeholder?: string
 }
 
-const InputSearch = (props: Props) => {
+const InputSearch = (props: IProps) => {
     return (
         <div className={classes.InputSearch}>
             <i className="fas fa-search"></i>

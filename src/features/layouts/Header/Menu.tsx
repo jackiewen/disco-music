@@ -2,13 +2,13 @@ import React from 'react';
 import { IRoute } from '@interfaces';
 import MenuItem from './MenuItem';
 
-interface Props {
+interface IProps {
     items: Array<IRoute>,
     classHeaderItem?: string,
     classHeaderDropdownMenu?: string
 }
 
-const Menu = (props: Props) => {
+const Menu = (props: IProps) => {
 
     return (
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
