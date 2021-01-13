@@ -8,14 +8,14 @@
 
         .HeaderItem:hover {
             & > a, a:hover {
-                color: $active-link-color;
+                color: $active-text-color;
             }
             .HeaderDropdownMenu {
                 display: block !important;
                 border-radius: 0;
                 
                 a:hover {
-                    color: $active-link-color;
+                    color: $active-text-color;
                     background-color: transparent;
                 }
             }

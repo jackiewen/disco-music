@@ -1,24 +1,19 @@
-@import '../../../sass/variables';
-
 .Box {
     // width: 100%;
     display: flex;
     flex-direction: column;
 
     .Header {
-        // background-color: red;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         .Title {
-            float: left;
-            color: $active-link-color;
-            font-size: 1.8rem;
+            padding: 0;
+            margin: 0;
         }
 
         .Tool {
-            float: right;
-            color: $mute-text-color;
-            font-size: 1rem;
         }
     }
 

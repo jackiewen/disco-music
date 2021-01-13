@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from './Box.module.scss';
 
-const Tool = (props: any) => {
+const Body = (props: any) => {
     return (
-        <div className={[classes.Tool, props.className||''].join(' ')}>
+        <div className={[classes.Body, props.className||''].join(' ')}>
             {props.children}
         </div>
     );
 }
 
-export default Tool;
+export default Body;

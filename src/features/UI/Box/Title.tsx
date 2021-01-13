@@ -3,7 +3,9 @@ import classes from './Box.module.scss';
 
 const Title = (props: any) => {
     return (
-        <h2 className={classes.Title}>{props.title}</h2>
+        <h2 className={[classes.Title, props.className||''].join(' ')}>
+            {props.children}
+        </h2>
     );
 }
 

@@ -1,3 +1,5 @@
+@import './sass/variables';
+
 @font-face {
   font-family: 'SFProDisplay-Regular';
   src: local('SFProDisplay-Regular'), url(./fonts/SFProDisplay-Regular.ttf) format('ttf');
@@ -20,4 +22,25 @@ body {
 
 .text-uppercase-first-letter::first-letter {
   text-transform: capitalize !important;
+}
+
+.active-text-color {
+  color: $active-text-color !important;
+}
+
+.mute-text-color {
+  color: $mute-text-color !important;
+}
+
+.main-text-color {
+  color: $main-text-color !important;
+}
+
+.mute-link {
+  text-decoration: none;
+  color: $mute-text-color;
+  transition: all 0.2s linear;
+  &:hover, &:active {
+    color: $active-text-color;
+  }
 }

@@ -1,19 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import classes from './Box.module.scss';
+import Header from './Header';
+import Body from './Body';
+import Title from './Title';
+import Tool from './Tool';
 
 const Box = (props: any) => {
     return (
-        <div className={classes.Box}>
-            <div className={classes.Header}>
-                <h2 className={classes.Title}>{props.title}</h2>
-                {props.href && <Link className={classes.ViewAll} to={props.href}>view all</Link>}
-            </div>
-            <div className={classes.Body}>
-                {props.children}
-            </div>
+        <div className={[classes.Box, props.className||''].join(' ')}>
+            {props.children}
         </div>
     );
 }
+
+Box.Header = Header;
+Box.Body = Body;
+Box.Title = Title;
+Box.Tool = Tool;
 
 export default Box;
