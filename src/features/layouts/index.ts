@@ -1,5 +1,5 @@
-import TopBar from './TopBar/TopBar';
-import Header from './Header/Header';
+import TopBar from './TopBar';
+import Header from './Header';
 
 export {
     TopBar,

@@ -2,14 +2,15 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@mockups": ["mockups"],
-            "@config": ["src/config"],
-            "@constants": ["src/constants"],
-            "@interfaces": ["src/interfaces"],
-            "@UI": ["src/features/UI"],
+            "@mockups/*": ["mockups/*"],
+            "@images/*": ["src/images/*"],
+            "@config/*": ["src/config/*"],
+            "@constants/*": ["src/constants/*"],
+            "@interfaces/*": ["src/interfaces/*"],
+            "@UI/*": ["src/features/UI/*"],
             "@layouts": ["src/features/layouts"],
-            "@pages": ["src/pages"],
-            "@images": ["src/images"],
+            "@pages/*": ["src/pages/*"],
+            
         }
     }
 }

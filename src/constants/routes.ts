@@ -5,6 +5,6 @@ export const routes = [
         exact: "exact",
         path: "/",
         guard: "user",
-        component: lazy(() => import("../pages/Home/Home")),
+        component: lazy(() => import("../pages/Home")),
     }
 ];

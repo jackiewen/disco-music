@@ -7,7 +7,7 @@ const Box = (props: any) => {
         <div className={classes.Box}>
             <div className={classes.Header}>
                 <h2 className={classes.Title}>{props.title}</h2>
-                <Link className={classes.ViewAll} to={props.href}>view all</Link>
+                {props.href && <Link className={classes.ViewAll} to={props.href}>view all</Link>}
             </div>
             <div className={classes.Body}>
                 {props.children}

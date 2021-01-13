@@ -1,5 +1,5 @@
 import React from 'react';
-import { IRoute } from '@interfaces';
+import { IRoute } from '@interfaces/IRoute';
 import MenuItem from './MenuItem';
 
 interface IProps {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SubMenuItem from './SubMenuItem';
-import { IRoute } from '@interfaces';
+import { IRoute } from '@interfaces/IRoute';
 
 interface IProps {
     item: IRoute,

@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Header.module.scss';
 import { useTranslation } from 'react-i18next';
 import Menu from './Menu';
-import { Button } from '@UI';
+import UploadButton from '@UI/Button/Upload';
 
 const MenuMockup = require('@mockups/menu.json');
 
@@ -22,7 +22,7 @@ const Header = () => {
                         classHeaderDropdownMenu={classes.HeaderDropdownMenu}
                     />
                 </div>
-                <Button.Upload />
+                <UploadButton />
             </div>
         </nav>
     );

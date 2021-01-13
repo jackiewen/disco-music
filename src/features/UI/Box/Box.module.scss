@@ -10,23 +10,15 @@
         display: flex;
         flex-direction: row;
         .Title {
-            flex-grow: 1;
-            align-self: center;
+            float: left;
             color: $active-link-color;
             font-size: 1.8rem;
         }
 
-        .ViewAll {
-            flex-grow: 1;
-            text-align: right;
-            align-self: center;
-            text-decoration: none;
+        .Tool {
+            float: right;
             color: $mute-text-color;
             font-size: 1rem;
-        }
-
-        .ViewAll:hover {
-            text-decoration: underline;
         }
     }
 

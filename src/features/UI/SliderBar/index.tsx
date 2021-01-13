@@ -2,11 +2,11 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { SongItem } from '@UI';
+import SongItem from '@UI/SongItem';
 import './SliderBar.scss';
 import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
-import { ISong } from '@interfaces';
+import { ISong } from '@interfaces/ISong';
 
 const sliderItems = require('@mockups/slider-items.json');
 
