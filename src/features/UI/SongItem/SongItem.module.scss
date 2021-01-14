@@ -1,14 +1,13 @@
 @import '../../../sass/variables';
 
 .SongItem {
+    // font-size: 100%;
     cursor: pointer;
     .SongCover {
-        width: 100% !important;
-        height: 324px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 10px;
+        border-radius: 3%;
         position: relative;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
@@ -16,7 +15,7 @@
             background-color: rgba($color: #000, $alpha: .2);
             width: 100%;
             height: 100%;
-            border-radius: 10px;
+            border-radius: 3%;
             opacity: 0;
             transition: all .5s;
         }
@@ -26,7 +25,7 @@
             content: "\f144";
             color: #fff;
             position: absolute;
-            font-size: 5rem;
+            font-size: 4em;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
@@ -43,43 +42,20 @@
         padding-top: 10px;
         .Title {
             color: $main-text-color;
-            font-size: 1.2rem;
+            font-size: 1em;
+            font-weight: 500;
             .Other {
                 color: $mute-text-color;
-                font-size: 1rem;
+                font-size: 0.9em;
             }
         }
         .Author {
             color: $mute-text-color;
-            font-size: 1.2rem;
+            font-size: 1em;
         }
         .Quality {
             color: red;
-            font-size: 0.8rem;
-        }
-    }
-
-    @media (max-width: 1399px) {
-        .SongCover {
-            height: 279px;
-        }
-    }
-
-    @media (max-width: 1199px) {
-        .SongCover {
-            height: 234px;
-        }
-    }
-
-    @media (max-width: 767px) {
-        .SongCover {
-            height: 172px;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .SongCover {
-            height: 258px;
+            font-size: 0.8em;
         }
     }
 }

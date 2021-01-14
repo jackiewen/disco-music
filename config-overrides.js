@@ -12,6 +12,7 @@ module.exports = function override(config) {
     ['@layouts']: path.resolve(__dirname, 'src/features/layouts'),
     ['@UI']: path.resolve(__dirname, 'src/features/UI'),
     ['@pages']: path.resolve(__dirname, 'src/pages'),
+    ['@partials']: path.resolve(__dirname, 'src/features/partials'),
     ['@images']: path.resolve(__dirname, "src/images"),
   })(config);
   removeModuleScopePlugin()(config);

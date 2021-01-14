@@ -5,6 +5,11 @@
   src: local('SFProDisplay-Regular'), url(./fonts/SFProDisplay-Regular.ttf) format('ttf');
 }
 
+@font-face {
+  font-family: 'SFProDisplay-Bold';
+  src: local('SFProDisplay-Bold'), url(./fonts/SFProDisplay-Bold.ttf) format('ttf');
+}
+
 * {
   margin: 0;
   padding: 0;

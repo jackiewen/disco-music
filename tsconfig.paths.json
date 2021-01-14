@@ -10,6 +10,7 @@
             "@UI/*": ["src/features/UI/*"],
             "@layouts": ["src/features/layouts"],
             "@pages/*": ["src/pages/*"],
+            "@partials/*": ["src/features/partials/*"],
             
         }
     }

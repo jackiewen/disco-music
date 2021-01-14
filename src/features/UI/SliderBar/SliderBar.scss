@@ -4,6 +4,7 @@
         padding: 10px;
         outline: none;
         position: relative;
+        height: inherit !important;
     }
 
     .slick-dots {
@@ -23,6 +24,44 @@
         }
         &-prev {
             left: -20px;
+        }
+    }
+
+    div[class^="SongItem_SongItem"] {
+        div[class^="SongItem_SongCover"] {
+            height: 324px;
+        }
+    }
+
+    @media (max-width: 1399px) {
+        div[class^="SongItem_SongItem"] {
+            div[class^="SongItem_SongCover"] {
+                height: 279px;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        div[class^="SongItem_SongItem"] {
+            div[class^="SongItem_SongCover"] {
+                height: 234px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        div[class^="SongItem_SongItem"] {
+            div[class^="SongItem_SongCover"] {
+                height: 172px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        div[class^="SongItem_SongItem"] {
+            div[class^="SongItem_SongCover"] {
+                height: 258px;
+            }
         }
     }
 }

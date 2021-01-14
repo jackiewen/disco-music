@@ -5,7 +5,12 @@ import Body from './Body';
 import Title from './Title';
 import Tool from './Tool';
 
-const Box = (props: any) => {
+interface IProps {
+    className?: string,
+    children?: any
+}
+
+const Box = (props: IProps) => {
     return (
         <div className={[classes.Box, props.className||''].join(' ')}>
             {props.children}

@@ -1,7 +1,12 @@
 import React from 'react';
 import classes from './Box.module.scss';
 
-const Title = (props: any) => {
+interface IProps {
+    className?: string,
+    children?: any
+}
+
+const Title = (props: IProps) => {
     return (
         <h2 className={[classes.Title, props.className||''].join(' ')}>
             {props.children}

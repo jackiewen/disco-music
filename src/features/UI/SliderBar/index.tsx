@@ -25,6 +25,7 @@ const SliderBar = (props: IProps) => {
         slidesToScroll: 4,
         initialSlide: 0,
         className:"main-slider",
+        // variableWidth: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         responsive: [
@@ -60,7 +61,7 @@ const SliderBar = (props: IProps) => {
             <div className="container">
                 <Slider {...settings}>
                     {sliderItems && sliderItems.map((item: ISong, index: number) => (
-                        <SongItem 
+                        <SongItem
                             {...props}
                             key={"slider-item-" + index}
                             other={`${index + 1}. `}
@@ -70,7 +71,6 @@ const SliderBar = (props: IProps) => {
                             quality={item.quality}
                         />
                     ))}
-                    
                 </Slider>
             </div>
         </div>

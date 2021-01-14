@@ -8,12 +8,16 @@ interface IProps {
     title: string,
     author?: string,
     quality?: string,
+    width?: string,
+    height?: string,
+    className?: string
 }
 
 const SongItem = (props: IProps) => {
+
     return (
-        <div className={classes.SongItem}>
-            <div className={classes.SongCover} style={{backgroundImage: `url( ${props.coverImgPath || SongBg})`}}>
+        <div className={[classes.SongItem, props.className || ''].join(' ')} style={{width: props.width}}>
+            <div className={classes.SongCover} style={{width: props.width, height: props.height, backgroundImage: `url( ${props.coverImgPath || SongBg})`}}>
                 <div className={classes.SongCoverHover}></div>
             </div>
             <div className={classes.SongInfo}>

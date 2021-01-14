@@ -7,6 +7,7 @@ import HistoryButton from '@UI/Button/History';
 
 import { useTranslation } from 'react-i18next';
 import routers  from '@config/routers';
+import TopSearchResult from '@UI/TopSearchResult';
 
 function App() {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ function App() {
       <div className="d-flex align-items-center justify-content-between">
         <div className="me-5">
           <InputSearch placeholder={t('common:enter song, video, singer that you need to search')} />
+          <TopSearchResult />
         </div>
         <div>
           <HistoryButton />

@@ -1,7 +1,12 @@
 import React from 'react';
 import classes from './Box.module.scss';
 
-const Tool = (props: any) => {
+interface IProps {
+    className?: string,
+    children?: any
+}
+
+const Tool = (props: IProps) => {
     return (
         <div className={[classes.Tool, props.className||''].join(' ')}>
             {props.children}
