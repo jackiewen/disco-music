@@ -5,6 +5,7 @@ const { removeModuleScopePlugin, addWebpackAlias } = require("customize-cra");
 
 module.exports = function override(config) {
   addWebpackAlias({
+    ['@src']: path.resolve(__dirname, "src"),
     ['@mockups']: path.resolve(__dirname, "mockups"),
     ['@config']: path.resolve(__dirname, 'src/config'),
     ['@constants']: path.resolve(__dirname, 'src/constants'),

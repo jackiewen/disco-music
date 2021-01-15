@@ -63,7 +63,7 @@ const SliderBar = (props: IProps) => {
                     {sliderItems && sliderItems.map((item: ISong, index: number) => (
                         <SongItem
                             {...props}
-                            key={"slider-item-" + index}
+                            key={index}
                             other={`${index + 1}. `}
                             coverImgPath={item.cover_image}
                             title={item.title}

@@ -2,6 +2,7 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
+            "@src/*": ["src/*"],
             "@mockups/*": ["mockups/*"],
             "@images/*": ["src/images/*"],
             "@config/*": ["src/config/*"],

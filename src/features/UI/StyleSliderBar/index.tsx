@@ -54,7 +54,7 @@ const StyleSliderBar = (props: IProps) => {
     return (
         <Slider {...settings}>
             {sliderItems && sliderItems.map((item: any, index: number) => (
-                <div>
+                <div key={"ss" + index}>
                 <h3>1</h3>
               </div>
             ))}
