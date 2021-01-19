@@ -8,7 +8,7 @@ const LatestAlbum = () => {
             {[...Array(12).keys()].map((item, index) => (
                 <SongItem
                     key={index}
-                    className="flex-grow-1 p-3"
+                    className="flex-grow-1 p-2"
                     title="Quá Lự Kính (过滤镜) (Single)"
                     author="Nguyễn A"
                     coverImgPath="https://data.chiasenhac.com/data/cover/134/133126.jpg"

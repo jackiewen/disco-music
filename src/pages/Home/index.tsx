@@ -17,15 +17,20 @@ const Home = () => {
             <div className="row" style={{height: "100vh"}}>
                 <div className="col-md-9">
                     <Box>
-                        <Box.Header className="p-2">
+                        <Box.Header className="px-2 pt-3">
                             <Box.Title className="active-text-color text-uppercase-first-letter">Album mới nhất 2021</Box.Title>
                             <Box.Tool>
                                 <Link className="mute-link text-uppercase-first-letter" to="/view-all">view all</Link>
                             </Box.Tool>
                         </Box.Header>
                         <Box.Body>
+                        <div className="pb-2">
                             <LatestAlbum />
+                        </div>
+                        <div className="py-2">
                             <StyleSliderBar />
+                        </div>
+                            
                         </Box.Body>
                     </Box>
                 </div>

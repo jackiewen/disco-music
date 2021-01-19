@@ -1,26 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
-const sliderItems = require('@mockups/slider-items.json');
+import NextArrow from './NextArrow';
+import PrevArrow from './PrevArrow';
+import "./StyleSliderBar.scss";
+const sliderItems = require('@mockups/style-slider-items.json');
 
 interface IProps {
     
 }
 
 const settings = {
-    dots: true,
+    dots: false,
     // lazyLoad: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
-    className:"main-slider",
-    // variableWidth: true,
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PrevArrow />,
+    className:"style-slider",
+    variableWidth: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
         {
             breakpoint: 1024,
@@ -50,13 +53,14 @@ const settings = {
 };
 
 const StyleSliderBar = (props: IProps) => {
-
     return (
         <Slider {...settings}>
             {sliderItems && sliderItems.map((item: any, index: number) => (
-                <div key={"ss" + index}>
-                <h3>1</h3>
-              </div>
+            <div key={index}>
+                <Link to="#" className="slider-item" style={{ backgroundImage: `url(${require('@images/styles-slider/' + item.cover_image).default})` }}>
+                    <span>{item.title}</span>
+                </Link>
+            </div>
             ))}
         </Slider>
     );
