@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -57,9 +56,9 @@ const StyleSliderBar = (props: IProps) => {
         <Slider {...settings}>
             {sliderItems && sliderItems.map((item: any, index: number) => (
             <div key={index}>
-                <Link to="#" className="slider-item" style={{ backgroundImage: `url(${require('@images/styles-slider/' + item.cover_image).default})` }}>
+                <div className="slider-item" style={{ backgroundImage: `url(${require('@images/styles-slider/' + item.cover_image).default})` }}>
                     <span>{item.title}</span>
-                </Link>
+                </div>
             </div>
             ))}
         </Slider>

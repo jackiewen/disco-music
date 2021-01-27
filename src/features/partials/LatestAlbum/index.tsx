@@ -12,6 +12,10 @@ const LatestAlbum = () => {
                     title="Quá Lự Kính (过滤镜) (Single)"
                     author="Nguyễn A"
                     coverImgPath="https://data.chiasenhac.com/data/cover/134/133126.jpg"
+                    width="100%"
+                    height="80px"
+                    isVertical={true}
+                    quality="lossless"
                 />
             ))}
         </div>
