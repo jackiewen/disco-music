@@ -1,35 +1,35 @@
 [
     {
         "title": "BXH Việt Nam",
-        "cover_image": "BXHNhacVietNam.png"
+        "cover_image": "@images/style-slider/BXHNhacVietNam.png"
     },
     {
         "title": "BXH Việt Video",
-        "cover_image": "BXHVideo.png"
+        "cover_image": "@images/style-slider/BXHVideo.png"
     },
     {
         "title": "BXH US - UK",
-        "cover_image": "BXHNhacUs-UK.png"
+        "cover_image": "@images/style-slider/BXHNhacUs-UK.png"
     },
     {
         "title": "BXH Nhạc Hoa",
-        "cover_image": "BXHNhacHoa.png"
+        "cover_image": "@images/style-slider/BXHNhacHoa.png"
     },
     {
         "title": "BXH Nhạc Hàn",
-        "cover_image": "BXHNhacHan.png"
+        "cover_image": "@images/style-slider/BXHNhacHan.png"
     },
     
     {
         "title": "BXH Nhạc Nhật",
-        "cover_image": "BXHNhacNhat.png"
+        "cover_image": "@images/style-slider/BXHNhacNhat.png"
     },
     {
         "title": "BXH Nhạc Nước khác",
-        "cover_image": "BXHNhacNuocKhac.png"
+        "cover_image": "@images/style-slider/BXHNhacNuocKhac.png"
     },
     {
         "title": "BXH Beat Playback",
-        "cover_image": "BXHBeat.png"
+        "cover_image": "@images/style-slider/BXHBeat.png"
     }
 ]

@@ -6,7 +6,7 @@ import { I18nextProvider } from 'react-i18next';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { store } from './app/store';
 import i18n from '@config/i18n';
-import './index.scss';
+import './sass/index.scss';
 import App from './App';
 
 

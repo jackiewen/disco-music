@@ -1,10 +1,9 @@
 import React from 'react';
 import SongItem from '@UI/SongItem';
-import classes from './LatestAlbum.module.scss';
 
 const LatestAlbum = () => {
     return (
-        <div className={["d-flex flex-wrap", classes.LatestAlbum].join(' ')}>
+        <div className="d-flex flex-wrap">
             {[...Array(12).keys()].map((item, index) => (
                 <SongItem
                     key={index}
@@ -12,9 +11,10 @@ const LatestAlbum = () => {
                     title="Quá Lự Kính (过滤镜) (Single)"
                     author="Nguyễn A"
                     coverImgPath="https://data.chiasenhac.com/data/cover/134/133126.jpg"
-                    width="100%"
-                    height="80px"
-                    isVertical={true}
+                    width="150px"
+                    height="150px"
+                    fontSize="0.8rem"
+                    isVertical={false}
                     quality="lossless"
                 />
             ))}

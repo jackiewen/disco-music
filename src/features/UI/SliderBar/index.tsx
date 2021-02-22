@@ -8,10 +8,8 @@ import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
 import { ISong } from '@interfaces/ISong';
 
-const sliderItems = require('@mockups/slider-items.json');
-
 interface IProps {
-    items: Array<any>
+    sliderItems: Array<any>
 }
 
 const SliderBar = (props: IProps) => {
@@ -60,7 +58,7 @@ const SliderBar = (props: IProps) => {
         <div>
             <div className="container">
                 <Slider {...settings}>
-                    {sliderItems && sliderItems.map((item: ISong, index: number) => (
+                    {props.sliderItems && props.sliderItems.map((item: ISong, index: number) => (
                         <SongItem
                             {...props}
                             key={index}

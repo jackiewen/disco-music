@@ -5,10 +5,14 @@ import "slick-carousel/slick/slick-theme.css";
 import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
 import "./StyleSliderBar.scss";
-const sliderItems = require('@mockups/style-slider-items.json');
+
+interface SliderItem {
+    title: string,
+    cover_image: string
+}
 
 interface IProps {
-    
+    sliderItems: Array<SliderItem>
 }
 
 const settings = {
@@ -51,12 +55,18 @@ const settings = {
     ]
 };
 
-const StyleSliderBar = (props: IProps) => {
+const SmallSliderBar = (props: IProps) => {
     return (
         <Slider {...settings}>
-            {sliderItems && sliderItems.map((item: any, index: number) => (
+            {props.sliderItems && props.sliderItems.map((item: SliderItem, index: number) => (
             <div key={index}>
-                <div className="slider-item" style={{ backgroundImage: `url(${require('@images/styles-slider/' + item.cover_image).default})` }}>
+                <div className="slider-item" style={
+                    { backgroundImage: `url(${
+                        item.cover_image.includes('@images/', 0) ?
+                            require('@images/' + item.cover_image.replace('@images/', '')).default
+                            : item.cover_image})`
+                        }
+                }>
                     <span>{item.title}</span>
                 </div>
             </div>
@@ -65,4 +75,4 @@ const StyleSliderBar = (props: IProps) => {
     );
 }
 
-export default StyleSliderBar;
+export default SmallSliderBar;

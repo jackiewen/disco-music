@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Work",
+        "cover_image": "@images/topic-slider/work.png"
+    },
+    {
+        "title": "Coffee",
+        "cover_image": "@images/topic-slider/coffee.png"
+    },
+    {
+        "title": "Game",
+        "cover_image": "@images/topic-slider/game.png"
+    },
+    {
+        "title": "Travel",
+        "cover_image": "@images/topic-slider/travel.png"
+    },
+    {
+        "title": "New Year",
+        "cover_image": "@images/topic-slider/newyear.png"
+    },
+    
+    {
+        "title": "Romance",
+        "cover_image": "@images/topic-slider/romance.png"
+    },
+    {
+        "title": "Sleep",
+        "cover_image": "@images/topic-slider/sleep.png"
+    },
+    {
+        "title": "Gym",
+        "cover_image": "@images/topic-slider/gym.png"
+    }
+]
