@@ -1,35 +1,43 @@
 [
     {
         "title": "Work",
-        "cover_image": "@images/topic-slider/work.png"
+        "coverImage": "@images/topic-slider/work.png",
+        "link": "/topic-slider"
     },
     {
         "title": "Coffee",
-        "cover_image": "@images/topic-slider/coffee.png"
+        "coverImage": "@images/topic-slider/coffee.png",
+        "link": "/topic-slider"
     },
     {
         "title": "Game",
-        "cover_image": "@images/topic-slider/game.png"
+        "coverImage": "@images/topic-slider/game.png",
+        "link": "/topic-slider"
     },
     {
         "title": "Travel",
-        "cover_image": "@images/topic-slider/travel.png"
+        "coverImage": "@images/topic-slider/travel.png",
+        "link": "/topic-slider"
     },
     {
         "title": "New Year",
-        "cover_image": "@images/topic-slider/newyear.png"
+        "coverImage": "@images/topic-slider/newyear.png",
+        "link": "/topic-slider"
     },
     
     {
         "title": "Romance",
-        "cover_image": "@images/topic-slider/romance.png"
+        "coverImage": "@images/topic-slider/romance.png",
+        "link": "/topic-slider"
     },
     {
         "title": "Sleep",
-        "cover_image": "@images/topic-slider/sleep.png"
+        "coverImage": "@images/topic-slider/sleep.png",
+        "link": "/topic-slider"
     },
     {
         "title": "Gym",
-        "cover_image": "@images/topic-slider/gym.png"
+        "coverImage": "@images/topic-slider/gym.png",
+        "link": "/topic-slider"
     }
 ]

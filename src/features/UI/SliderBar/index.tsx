@@ -63,10 +63,12 @@ const SliderBar = (props: IProps) => {
                             {...props}
                             key={index}
                             other={`${index + 1}. `}
-                            coverImgPath={item.cover_image}
+                            coverImg={item.coverImage}
                             title={item.title}
                             author={item.author}
                             quality={item.quality}
+                            songLink={item.songLink}
+                            authorLink={item.authorLink}
                         />
                     ))}
                 </Slider>

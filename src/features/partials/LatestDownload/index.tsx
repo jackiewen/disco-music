@@ -1,7 +1,7 @@
 import React from 'react';
 import SongItem from '@UI/SongItem';
 
-const NewSongSharing = () => {
+const LatestDownload = () => {
     return (
         <ul className="list-vertical">
             {[...Array(10).keys()].map((item, index) => (
@@ -27,4 +27,4 @@ const NewSongSharing = () => {
     );
 }
 
-export default NewSongSharing;
+export default LatestDownload;

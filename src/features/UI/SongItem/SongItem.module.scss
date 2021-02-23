@@ -3,7 +3,7 @@
 .SongItem {
     // font-size: 100%;
     .SongCover {
-        cursor: pointer;
+        display: block;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -39,19 +39,30 @@
     }
 
     .SongInfo {
+        a {
+            text-decoration: none;
+        }
         padding-top: 10px;
         .Title {
             color: $main-text-color;
             font-size: 1em;
             font-weight: 500;
+            transition: all .2s;
             .Other {
                 color: $mute-text-color;
                 font-size: 0.9em;
+            }
+            &:hover {
+                color: $active-text-color;
             }
         }
         .Author {
             color: $mute-text-color;
             font-size: 1em;
+            transition: all .2s;
+            &:hover {
+                color: $active-text-color;
+            }
         }
         .Quality {
             color: red;

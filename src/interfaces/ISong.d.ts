@@ -1,7 +1,9 @@
 export interface ISong {
-    cover_image: string,
+    coverImage: string,
     other?: string,
     title: string,
     author?: string,
-    quality?: string
+    quality?: string,
+    songLink: string,
+    authorLink: string,
 }

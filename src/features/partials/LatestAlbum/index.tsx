@@ -10,12 +10,14 @@ const LatestAlbum = () => {
                     className="flex-grow-1 p-2"
                     title="Quá Lự Kính (过滤镜) (Single)"
                     author="Nguyễn A"
-                    coverImgPath="https://data.chiasenhac.com/data/cover/134/133126.jpg"
+                    coverImg="https://data.chiasenhac.com/data/cover/134/133126.jpg"
                     width="150px"
                     height="150px"
                     fontSize="0.8rem"
                     isVertical={false}
                     quality="lossless"
+                    songLink={"/song"}
+                    authorLink={"/author"}
                 />
             ))}
         </div>

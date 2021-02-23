@@ -5,6 +5,7 @@ import classes from './Home.module.scss';
 import Box from '@UI/Box';
 import LatestAlbum from '@partials/LatestAlbum';
 import NewSongSharing from '@partials/NewSongSharing';
+import LatestDownload from '@partials/LatestDownload';
 import SmallSliderBar from '@src/features/UI/SmallSliderBar';
 const mainSliderItems = require('@mockups/slider-items.json');
 const styleSliderItems = require('@mockups/style-slider-items.json');
@@ -63,7 +64,7 @@ const Home = () => {
                                     </Box.Tool>
                                 </Box.Header>
                                 <Box.Body>
-                                    <NewSongSharing />
+                                    <LatestDownload />
                                 </Box.Body>
                             </Box>
                         </div>
